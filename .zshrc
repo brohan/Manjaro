@@ -66,10 +66,12 @@ POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
 POWERLEVEL9K_CUSTOM_MANJARO="echo -n '\uf312'"
 POWERLEVEL9K_CUSTOM_MANJARO_FOREGROUND="white"
 POWERLEVEL9K_CUSTOM_MANJARO_BACKGROUND="green4"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_manjaro dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_manjaro vi_mode dir vcs)
 
 # Right Command Prompt Settings
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+POWERLEVEL9K_TIME_FORMAT='H:M'
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history )
 
 ##### | END POWERLEVEL10K SETTINGS | #####
 
@@ -96,4 +98,5 @@ alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 
 neofetch
-set -o vi
+bindkey -v
+export KEYTIMEOUT=1
