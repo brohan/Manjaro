@@ -24,6 +24,7 @@ zplugin cdclear -q # <- forget completions provided up to this moment
 
 # most themes use this to set the prompt
 setopt promptsubst 
+setopt autocd #no need to use 'cd' to change directories
 # end
 
 # | CURRENT THEME: Powerlevel10k | #
@@ -71,7 +72,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(custom_manjaro vi_mode dir vcs)
 # Right Command Prompt Settings
 POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 POWERLEVEL9K_TIME_FORMAT='H:M'
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history )
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history ip vpn_ip)
 
 ##### | END POWERLEVEL10K SETTINGS | #####
 
@@ -80,7 +81,6 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs histor
 # Aliases
 # Some more basic aliases
 alias ls='ls --color=auto'
-alias vi='vim'
 alias ll='ls -lh'
 alias la='ls -lAh'
 alias l='ls -lah'
@@ -96,6 +96,22 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
+
+alias d='dirs -v | head -10'
+alias 1='cd -'
+alias 2='cd -2'
+alias 3='cd -3'
+alias 4='cd -4'
+alias 5='cd -5'
+alias 6='cd -6'
+alias 7='cd -7'
+alias 8='cd -8'
+alias 9='cd -9'
+
+alias vi='vim'
+alias grep='grep --color'
+alias -g G='| grep '
+alias -g C='clear'
 
 neofetch
 bindkey -v
