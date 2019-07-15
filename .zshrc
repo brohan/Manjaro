@@ -83,7 +83,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs histor
 alias ls='ls --color=auto'
 alias ll='ls -lh'
 alias la='ls -lAh'
-alias l='ls -lah'
+alias l='ls'
 alias md='mkdir -p'
 alias rd='rmdir'
 alias cd..='cd ..'
@@ -110,7 +110,7 @@ alias 9='cd -9'
 
 alias vi='vim'
 alias grep='grep --color'
-alias -g G='| grep '
+alias -g G='| egrep '
 alias -g C='clear'
 
 neofetch
