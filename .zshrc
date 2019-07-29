@@ -1,5 +1,5 @@
 # Manjaro zsh config
-# Pre-reqs: nerd fonts complete (via AUR / pamac), zplugin, neofetch
+# Pre-reqs: nerd fonts complete (via AUR / pamac turn on AUR in pamas), zplugin, neofetch
 
 
 ### Added by Zplugin's installer
